@@ -1,10 +1,5 @@
 #ifndef UTILS_h
 #define UTILS_h
-
-enum MOTOR_DIRECTION{
-    CLOCKWISE,
-    COUNTER_CLOCKWISE
-}
-
-
+#define CLOCKWISE 1 
+#define COUNTER_CLOCKWISE 0
 #endif
