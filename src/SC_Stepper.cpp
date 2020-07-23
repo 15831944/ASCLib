@@ -18,7 +18,7 @@ SC_A4988_Stepper::~SC_A4988_Stepper()
     digitalWrite(_stepPin, LOW);
 }
 
-void SC_A4988_Stepper::step(MOTOR_DIRECTION direction)
+void SC_A4988_Stepper::step(bool direction)
 {
     digitalWrite(_dirPin, direction);
     digitalWrite(_stepPin, HIGH);
@@ -26,7 +26,7 @@ void SC_A4988_Stepper::step(MOTOR_DIRECTION direction)
     digitalWrite(_stepPin, LOW);
 }
 
-void SC_A4988_Stepper::step(unsigned int amount, MOTOR_DIRECTION direction)
+void SC_A4988_Stepper::step(unsigned int amount, bool direction)
 {
     digitalWrite(_dirPin, direction);
     for(unsigned int i=0; i<amount;i++)
