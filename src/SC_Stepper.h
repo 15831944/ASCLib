@@ -8,8 +8,8 @@ class SC_A4988_Stepper {
     public:
         SC_A4988_Stepper(unsigned char dirPin, unsigned char stepPin);
         ~SC_A4988_Stepper();
-        void step(MOTOR_DIRECTION direction);
-        void step(unsigned int amount, MOTOR_DIRECTION direction);
+        void step(bool direction);
+        void step(unsigned int amount, bool direction);
         void setSpecificSpeed(unsigned int speed);
 
     private:
