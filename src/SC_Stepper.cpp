@@ -40,5 +40,5 @@ void SC_A4988_Stepper::step(unsigned int amount, bool direction)
 
 void SC_A4988_Stepper::setSpecificSpeed(unsigned int amount)
 {
-    
+    _speed = amount;
 }
